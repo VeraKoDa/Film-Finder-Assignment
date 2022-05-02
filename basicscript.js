@@ -64,7 +64,6 @@ function checkFilterInput(name) {
 // Filter function
 function filter(name) {
   let userFilter = checkFilterInput(name);
-  console.log("userFilter", userFilter);
 
   switch (userFilter) {
     case "latest":
@@ -135,7 +134,6 @@ function searchInput() {
       radios[r].checked = false;
     }
   }
-  console.log("search input = ", typeof search);
   switch (search) {
     case "avenger":
     case "avengers":
