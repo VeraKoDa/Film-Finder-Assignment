@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/film-style.css" />
+    <title>Vera's Film Finder</title>
+    <script defer src="moviescript.js"></script>
+    <script defer src="basicscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welkom bij Vera's Film finder!</h1>
+    </header>
+    <!-- Menu met Radio Buttons -->
+    <nav class="radio-filter">
+      <span>
+        <input type="radio" name="filter" id="new" value="latest" />
+        <label for="new">Latest movies (2014 and newer)</label>
+      </span>
+      <span>
+        <input type="radio" name="filter" id="avenger" value="avenger" />
+        <label for="avenger">Avengers</label>
+      </span>
+      <span>
+        <input type="radio" name="filter" id="batman" value="batman" />
+        <label for="batman">Batman</label>
+      </span>
+      <span>
+        <input type="radio" name="filter" id="princess" value="princess" />
+        <label for="princess">Princess</label>
+      </span>
+      <span>
+        <input type="radio" name="filter" id="xmen" value="xmen" />
+        <label for="xmen">X-Men</label>
+      </span>
+      <span id="searchBar">
+        <input
+          type="text"
+          name="search"
+          id="searchInput"
+          placeholder="Search.."
+        />
+        <button id="searchBtn">Search</button>
+      </span>
+    </nav>
+    <!-- Alle inhoud (incl. films) -->
+    <main class="movieResults">
+      <ul id="movieList"></ul>
+    </main>
+    <footer>
+      <p>&copy; Copyright by VeraKoDa</p>
+    </footer>
+  </body>
+</html>

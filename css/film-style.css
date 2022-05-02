@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;200;300&display=swap");
+*:focus {
+  outline: none;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0 auto;
+  background-color: #254040;
+  color: white;
+  max-width: 1000px;
+  padding: 5px 50px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Dancing Script";
+  font-size: 2em;
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav p {
+  cursor: pointer;
+  padding: 5px;
+}
+
+nav span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  text-align: center;
+}
+
+nav span * {
+  cursor: pointer;
+}
+
+nav button,
+nav input[type="text"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  border-radius: 2px;
+  border: none;
+  color: #254040;
+  -webkit-box-shadow: 0 0 10px rgba(194, 205, 205, 0.3);
+          box-shadow: 0 0 10px rgba(194, 205, 205, 0.3);
+  -webkit-transition: 0.2s ease-in box-shadow;
+  transition: 0.2s ease-in box-shadow;
+}
+
+nav button:hover,
+nav input[type="text"]:hover {
+  -webkit-box-shadow: 0 0 10px rgba(93, 98, 98, 0.5);
+          box-shadow: 0 0 10px rgba(93, 98, 98, 0.5);
+}
+
+nav button {
+  background-color: lightgray;
+  -webkit-transition: 0.3s ease-in background-color;
+  transition: 0.3s ease-in background-color;
+}
+
+nav button:hover {
+  background-color: #c2cdcd;
+}
+
+nav input[type="text"] {
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  min-width: 75px;
+  max-width: 125px;
+  padding: 2px 5px;
+}
+
+main {
+  margin-top: 5px;
+  padding: 10px;
+  height: 100%;
+}
+
+main ul {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: row;
+  gap: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main ul img {
+  width: 275px;
+  height: 375px;
+}
+
+main ul li {
+  max-width: 300px;
+  list-style: none;
+}
+
+main ul p {
+  margin: 5px;
+  text-align: match-parent;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 940px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 1em;
+  }
+  nav span {
+    min-width: 52px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main ul {
+    -ms-grid-columns: (minmax(175px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+  main ul img {
+    width: 175px;
+    height: 275px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 1em;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  nav span {
+    min-width: 52px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main ul {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  main ul img {
+    width: 150px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=film-style.css.map */

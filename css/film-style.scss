@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;200;300&display=swap");
+
+*:focus {
+  outline: none;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(37, 64, 64);
+  color: white;
+  max-width: 1000px;
+  padding: 5px 50px;
+  font-family: "Poppins";
+  font-size: 0.9em;
+  font-weight: 300;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dancing Script";
+  font-size: 2em;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  align-items: center;
+
+  p {
+    cursor: pointer;
+    padding: 5px;
+  }
+  span {
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    padding: 5px;
+    text-align: center;
+    * {
+      cursor: pointer;
+    }
+  }
+
+  button,
+  input[type="text"] {
+    box-sizing: border-box;
+    font-family: "Poppins";
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: none;
+    color: rgb(37, 64, 64);
+    box-shadow: 0 0 10px rgba(194, 205, 205, 0.3);
+    transition: 0.2s ease-in box-shadow;
+    &:hover {
+      box-shadow: 0 0 10px rgba(93, 98, 98, 0.5);
+    }
+  }
+  button {
+    background-color: lightgray;
+    transition: 0.3s ease-in background-color;
+    &:hover {
+      background-color: rgb(194, 205, 205);
+    }
+  }
+  input[type="text"] {
+    align-items: right;
+    min-width: 75px;
+    max-width: 125px;
+    padding: 2px 5px;
+  }
+}
+
+main {
+  margin-top: 5px;
+  padding: 10px;
+  height: 100%;
+  ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: row;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    img {
+      width: 275px;
+      height: 375px;
+    }
+    li {
+      max-width: 300px;
+      list-style: none;
+    }
+    p {
+      margin: 5px;
+      text-align: match-parent;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 940px) {
+  nav {
+    flex-direction: column;
+    align-content: center;
+    font-size: 1em;
+    span {
+      min-width: 52px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  main ul {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    img {
+      width: 175px;
+      height: 275px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 1em;
+  }
+  nav {
+    flex-direction: column;
+    align-content: center;
+    font-size: 0.8em;
+    text-align: center;
+    span {
+      min-width: 52px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  main ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    img {
+      width: 150px;
+      height: 200px;
+    }
+  }
+}
